@@ -17,8 +17,8 @@ wordfreq = 15
 year_start = 1956
 year_end = 1978
 
-# start of the main-function
-# iterate over the years
+# Start of the main-function
+# Iterate over the years
 for i in range(year_start, year_end):
     # Read the dictonary File and split it into a list
     dict_file = open("Dictionaries\\%s_%s.txt" % (dict_typ,dict_lng), "r")
