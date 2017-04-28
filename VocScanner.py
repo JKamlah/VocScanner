@@ -9,7 +9,6 @@
 #Date:     **28.04.2017**
 
 ######################### IMPORT ###############################
-
 import os
 import re
 
@@ -22,14 +21,14 @@ voc_lng = 'ger'
 wordfreq = 100
 year_start = 1960
 year_end = 1978
-word_min_len =1
+word_min_len = 1
 """Status True print everything that is found in the vocabulary
 Status False print everything that isnt found in the vocabulary"""
 Status = False
-"""Start of the main-function
-Iterate over the years """
 
 ####################### MAIN ###################################
+"""Start of the main-function
+Iterate over the years """
 for i in range(year_start, year_end):
     """Read the vocabulary File and split it into a list"""
     voc_file = open("Vocabularies\\%s_%s.txt" % (voc_typ,voc_lng), 'r')
@@ -59,7 +58,7 @@ for i in range(year_start, year_end):
                                     break
                                 if word == voc_list[-1]:
                                     output_file.write(line.split()[1]+'\n')
-                    count +=1;
+                    count += 1;
 
     output_file.close()
     voc_file.close()
